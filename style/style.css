@@ -736,7 +736,7 @@ a {
 .app {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 420px
+    margin-bottom: 411px
 }
 
 
@@ -802,8 +802,16 @@ a {
 
 .footer{
     background-color: #232233;
+}
+
+.main-footer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-top: 226px;
+}
+
+.tammy-food-link{
+    padding-left: 137px;
 }
 
 .tammy-footer{
@@ -812,6 +820,7 @@ a {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-bottom: 0;
 }
 
 .food-footer{
@@ -828,7 +837,10 @@ a {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 25px
+    line-height: 25px;
+    margin-top: 10px;
+    padding: 0;
+    margin-bottom: 0;
 }
 .quick-link{
     color:  #FFF;
@@ -876,13 +888,19 @@ a {
     flex-direction: column;
 }
 
+.letter-link{
+    padding-right: 49px;
+}
+
 .letter{
     color: #FFF;
     font-size: 25px;
     font-style: normal;
     font-weight: 700;
-    line-height: 37.5px; /* 150% */
+    line-height: 37.5px;
     text-transform: uppercase;
+    margin-top: 9px;
+    margin-bottom: 0;
 }
 
 .describe-letter{
@@ -892,10 +910,39 @@ a {
     font-weight: 400;
     line-height: 24px;
     width: 315px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+input{
+    width: 362px;
+    height: 45px;
+    margin-top: 33px;
 }
 
 hr{
+    display: block;
     background: #FFF;
-    height: 1px;
     width: 1167px;
+    margin-top: 66px;
+    margin-bottom: 0;
+}
+
+.copyright{
+    color: #FFF;
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.footer-end{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 2px;
+    padidng-bottom: 10px;
 }
