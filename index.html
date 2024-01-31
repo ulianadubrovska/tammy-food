@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="img/favicon/favicon.png" type="image/png">
     <link rel="stylesheet" href="style/style.css">
     <title>Restaurant</title>
 </head>
@@ -15,9 +18,10 @@
 <body class="container">
 <header class="header">
     <div class="header-menu"><a href="/" class="tammy">Tammy <span class="food">Food</span></a>
-        <div class="information"><a href="" class="home ">Home</a> <a class="about" href="">About us </a> <a
-                class="menu" href="">Menu</a> <a class="blog" href="">Blog </a> <a class="contact" href="">Contact
-            Us</a></div>
+        <div class="information"><a href="" class="main-anchors">Home</a> <a class="main-anchors" href="">About us </a> <a
+                class="main-anchors" href="">Menu</a> <a class="main-anchors" href="">Blog </a> <a class="main-anchors" href="">Contact
+            Us</a>
+        </div>
     </div>
     <div class="photo">
         <img class="photo3" src="img/icons/about-us/Vector (2).svg" alt="photo3">
@@ -117,7 +121,7 @@
                         <p class="dish-price">$7.10</p>
                     </div>
                     <div class="menu-icons">
-                        <img src="img/icons/menu/dish-icon1.svg" alt="icon1">
+                      <button class="button-shop"><img src="img/icons/menu/dish-icon1.svg" alt="icon1"></button>
                         <img src="img/icons/menu/dish-icon2.svg" alt="icon2">
                     </div>
                 </div>
@@ -132,7 +136,7 @@
                         <p class="dish-price">$7.10</p>
                     </div>
                     <div class="menu-icons">
-                        <img src="img/icons/menu/dish-icon1.svg" alt="icon1">
+                        <img class="button-shop" src="img/icons/menu/dish-icon1.svg" alt="icon1">
                         <img class="icon-2" src="img/icons/menu/dish-icon2.svg" alt="icon2">
                     </div>
                 </div>
@@ -147,7 +151,7 @@
                         <p class="dish-price">$7.10</p>
                     </div>
                     <div class="menu-icons">
-                        <img src="img/icons/menu/dish-icon1.svg" alt="icon1">
+                        <img class="button-shop" src="img/icons/menu/dish-icon1.svg" alt="icon1">
                         <img class="icon-2" src="img/icons/menu/dish-icon2.svg" alt="icon2">
                     </div>
                 </div>
@@ -162,7 +166,7 @@
                         <p class="dish-price">$7.10</p>
                     </div>
                     <div class="menu-icons">
-                        <img src="img/icons/menu/dish-icon1.svg" alt="icon1">
+                        <img class="button-shop" src="img/icons/menu/dish-icon1.svg" alt="icon1">
                         <img class="icon-2" src="img/icons/menu/dish-icon2.svg" alt="icon2">
                     </div>
                 </div>
@@ -177,7 +181,7 @@
                         <p class="dish-price">$7.10</p>
                     </div>
                     <div class="menu-icons">
-                        <img src="img/icons/menu/dish-icon1.svg" alt="icon1">
+                        <img class="button-shop" src="img/icons/menu/dish-icon1.svg" alt="icon1">
                         <img class="icon-2" src="img/icons/menu/dish-icon2.svg" alt="icon2">
                     </div>
                 </div>
@@ -192,7 +196,7 @@
                         <p class="dish-price">$7.10</p>
                     </div>
                     <div class="menu-icons">
-                        <img src="img/icons/menu/dish-icon1.svg" alt="icon1">
+                        <img class="button-shop" src="img/icons/menu/dish-icon1.svg" alt="icon1">
                         <img class="icon-2" src="img/icons/menu/dish-icon2.svg" alt="icon2">
                     </div>
                 </div>
@@ -207,7 +211,7 @@
                         <p class="dish-price">$7.10</p>
                     </div>
                     <div class="menu-icons">
-                        <img src="img/icons/menu/dish-icon1.svg" alt="icon1">
+                        <img class="button-shop" src="img/icons/menu/dish-icon1.svg" alt="icon1">
                         <img class="icon-2" src="img/icons/menu/dish-icon2.svg" alt="icon2">
                     </div>
                 </div>
@@ -222,7 +226,7 @@
                         <p class="dish-price">$7.10</p>
                     </div>
                     <div class="menu-icons">
-                        <img src="img/icons/menu/dish-icon1.svg" alt="icon1">
+                        <img class="button-shop" src="img/icons/menu/dish-icon1.svg" alt="icon1">
                         <img class="icon-2" src="img/icons/menu/dish-icon2.svg" alt="icon2">
                     </div>
                 </div>
@@ -301,10 +305,6 @@
             <p class="describe-app">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                 Ipsum has been the
                 industry's standard dummy text ever since the 1500s.</p>
-            <div class="icons-app">
-                <img class="icons-app-1" src="img/icons/discount/Group%202106.svg" alt="">
-                <img class="icons-app-2" src="img/icons/discount/Group%201876.svg" alt="">
-            </div>
         </div>
         <div class="phone">
             <img data-aos="flip-right" class="slice-phone" src="img/photo/discount/Slice_1-removebg-preview.png" alt="">
@@ -326,10 +326,10 @@
                     Ipsum has been the
                     industry's standard dummy text ever since the 1500s.</p>
                 <div class="link-icons">
-                    <a class="program-icons" href=""><img class=" program-facebook " src="img/icons/footer/facebook-fill.svg" alt=""></a>
-                    <a class="program-icons" href=""><img class="program-instagram " src="img/icons/footer/instagram-fill.svg" alt=""></a>
-                    <a class="program-icons" href=""><img class="program-twitter " src="img/icons/footer/twitter-fill.svg" alt=""></a>
-                    <a class="program-icons" href=""><img class="program-youtube " src="img/icons/footer/youtube-fill.svg" alt=""></a>
+                    <a class="program-icons" href=""><img class="programs" src="img/icons/footer/facebook-fill.svg" alt=""></a>
+                    <a class="program-icons" href=""><img class="programs" src="img/icons/footer/instagram-fill.svg" alt=""></a>
+                    <a class="program-icons" href=""><img class="programs" src="img/icons/footer/twitter-fill.svg" alt=""></a>
+                    <a class="program-icons" href=""><img class="programs " src="img/icons/footer/youtube-fill.svg" alt=""></a>
                     <div class="indicator"></div>
                 </div>
             </div>
@@ -371,6 +371,26 @@
 </main>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js/main.js"></script>
+<script>
+    jQuery(document).ready(function(){
+        jQuery(window).scroll(function () {
+            if (jQuery(this).scrollTop() > 600) {
+                jQuery('#myBtn').css('opacity', '1');
+            } else {
+                jQuery('#myBtn').css('opacity', '0');
+            }
+        });
+
+        jQuery('#myBtn').click(function () {
+            jQuery('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+    });
+</script>
+
+<div id="myBtn" title="Back to top"><i class="fa fa-arrow-up"></i></div>
 </body>
 
 </html>
