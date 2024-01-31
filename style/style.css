@@ -53,6 +53,27 @@ body {
     color: #3C3C3C;
     font-size: 32px;
     font-weight: bold;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.tammy::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    top: 100%;
+    left: 0;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: center;
+    background-color: #FCC647;
+}
+
+.tammy:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
 }
 
 .main-anchors {
@@ -950,8 +971,14 @@ hr {
     display: block;
     background: #FFF;
     width: 1167px;
-    margin-top: 47px;
+    margin-top: 51px;
     margin-bottom: 0;
+}
+
+.copy{
+    color: #FFFFFF;
+    font-size: 24px;
+    margin-top: 14px;
 }
 
 .copyright {
@@ -962,6 +989,7 @@ hr {
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+    margin-top: 7px;
 }
 
 .footer-end {
@@ -998,6 +1026,7 @@ hr {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.3);
+    color: #FCC647;
 }
 
 
@@ -1108,6 +1137,6 @@ hr {
 }
 
 #myBtn:hover {
-    background-color: #009fc1;
+    background-color: #FCC647;
     color: #fff;
 }
