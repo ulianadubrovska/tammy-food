@@ -524,14 +524,14 @@ a {
     height: 29px;
 }
 
-.button-shop {
+.button-shop-1  {
     border: none;
     background-color: #FFF;
     cursor: pointer;
     transition: transform 0.7s ease-in-out;
 }
 
-.button-shop:hover {
+.button-shop-1:hover {
     transform: rotate(360deg);
 }
 
@@ -543,7 +543,7 @@ a {
 }
 
 .button-shop-2:hover {
-    transform: rotate(360turn);
+    transform: rotate(-360deg);
 }
 
 
