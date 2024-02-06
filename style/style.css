@@ -105,6 +105,10 @@ body {
     transform-origin: center;
 }
 
+.main-anchors:active{
+    color:#FCC647 ;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -916,6 +920,10 @@ a {
     transform-origin: left;
 }
 
+.link-hover:active{
+    color: #FCC647;
+}
+
 .link {
     padding-left: 114px;
     margin-top: 1px;
@@ -1112,6 +1120,14 @@ hr {
     padding-left: 221px;
 }
 
+.text-mail:hover{
+    transform: skew(-10deg);
+}
+
+.text-mail:active{
+    color:#FCC647;
+}
+
 .text-phone {
     padding-right: 94px;
 }
@@ -1128,6 +1144,14 @@ hr {
     font-style: normal;
     font-weight: 600;
     line-height: 37.5px;
+}
+
+.text-phone:hover{
+    transform: skew(-10deg);
+}
+
+.text-phone:active{
+    color:#FCC647;
 }
 
 #myBtn {
