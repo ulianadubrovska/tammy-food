@@ -873,7 +873,6 @@ a {
 .quick-link {
     color: #FFF;
     font-size: 25px;
-    font-style: normal;
     font-weight: 700;
     line-height: 37.5px;
     text-transform: uppercase;
@@ -882,42 +881,39 @@ a {
 }
 
 .link-type {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     gap: 12px;
     margin-top: 12px;
 }
 
-.link-about-us {
-    color: #FFF;
+.link-hover{
+    color: #FFFFFF;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 24px;;
-}
-
-.link-menu {
-    color: #FFF;
-    font-size: 16px;
-    font-style: normal;
     font-weight: 600;
     line-height: 24px;
 }
 
-.link-blog {
-    color: #FFF;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 24px
+.link-hover::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    top: 100%;
+    left: 0;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: left;
+    background-color: #FCC647;
 }
 
-.link-contact {
-    color: #FFF;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 24px;
+
+.link-hover:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 .link {
@@ -1019,7 +1015,6 @@ hr {
 
 .link-icons {
     margin-top: 22px;
-
 }
 
 .program-icons {
@@ -1044,7 +1039,11 @@ hr {
     transform: scale(1.3);
 }
 
-.program-icons:hover  svg path{
+.programs:hover  path{
+    fill: #FCC647 ;
+}
+
+.programs:active  path{
     fill: #FCC647 ;
 }
 
